@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />         
-</head>
-<body>
+    
+<body> 
     <header class="nav center">
-        <p class="logo">LOGO</p>
+        <p class="logo">Mnelisi's Web Profile</p>
         <input type="checkbox" name="" class="checkBtn"/>
         <ol class="center">
             <a href="#About"><li>About</li></a>
@@ -139,24 +140,7 @@
                     </div>     
                 </div>
                           
-            </div>
-            <div style="background-color: aliceblue;">
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-            </div>
+            </div>   
         </div>
     </div>
 
@@ -183,15 +167,16 @@
 
     <!-- Experience -->
     <div class="experience center" id="Experience">
-        <h3>Experience</h3>
-        <ul>
-            <li>
+        <h3 class="center">Experience</h3>      
+        <ul style="display: flex; justify-content: space-between; gap: 20px;">
+
+            <li style="flex: 1;">
                 <small>Feb 2023 - Present</small>
                 <p>Junior Software Developer</p>
                 <!--<p>Haramber</p> -->
                  <p>Company name: <a href="https://www.harambee.co.za/">Harambee</a></p> 
             </li>
-            <li>
+            <li style="flex: 1;">
                 <small>July 2022 - Jan-2023</small>
                 <p>Java Software Developer Intern </p>
                 <!--<p>JumpCo</p> -->
@@ -201,28 +186,120 @@
     </div>
 
     <!-- Projects -->
+    
     <div class="projects center" id="Projects">
         <h3>Projects</h3>
-        <div class="container">
-            <a id="Contributions" href="https://github.com/mnelic/Contibution_As_FulStackDeveloper/commit/879714ea741758d607f9c78bde5f03dd801fa7f2">
-                <div>My recent contributions</div>
-            </a>
-            <a href="https://github.com/mnelic/Covide-19_Statistics_Project">
-                <div>Covide-19_Statistics_Project</div>
-            </a>
-            <a href="https://github.com/mnelic/News-App">
-               <div>News App</div>
-            </a>
-            <a href="https://github.com/mnelic/Uber-Clone_App-150go">
-               <div>Uber Clone App-150go</div>
-            </a>
-            <a href="https://github.com/mnelic/File_Management_System_API">
-                <div>File Management System API</div>
-            </a>
-            <a href="https://github.com/mnelic/Minimal_API_Handbook">
-                <div>Minimal API Handbook</div>
-            </a>
-        </div>
+        <br/>
+        <h2>Recently</h2>
+        <br/>
+        <div class="accordion " id="accordionExample" >
+            <div class="accordion-item accordion-button-color">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordion-button-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  GitHub Contributions
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>My Contributions at Harambee:</strong> <br>
+                   The following screenshot demonstrates my familiarity with version control systems, such as GitHub. <br/><br/>
+                   View Project: <a class="" href="https://github.com/mnelic/Contibution_As_FulStackDeveloper/commit/879714ea741758d607f9c78bde5f03dd801fa7f2">Redirect</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item accordion-button-color">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed accordion-button-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Data Importer
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>A Console Application that's imports data:</strong> <br>
+                  I developed a database file and a console application that imports data from two Excel spreadsheets and inserts it into two separate tables. <br/>
+                <br/>
+                  View Project: <a class="" href="https://github.com/mnelic/DataImporter">Redirect</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item accordion-button-color">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed accordion-button-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Students Enrollement
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>A Web App(ASP.NET CORE and MS SQL):</strong>
+                  <br/>
+                  This web application capture a student <strong>first name</strong>, <strong>Gender</strong>, <strong>date of birth</strong>, <strong>home address</strong> and <strong>subjects enrolled</strong>. <br/>
+                  The data is stored in a ms sql database and displayed in a grid which allows the user to either edit or delete existing records.
+                   <br/><br/>
+                   View Project: <a class="" href="https://github.com/mnelic/Student_Enrollment">Redirect</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <br/>
+          <h2>Older</h2>
+          <div class="accordion " id="accordionExampleTwo" >
+            <div class="accordion-item accordion-button-color">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordion-button-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                  Uber Clone App-150go
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse " data-bs-parent="#accordionExampleTwo">
+                <div class="accordion-body">
+                  <strong>A Cross Platform Mobile App:</strong> <br>
+                  A Flutter-based application designed for ride-hailing services, consisting of a User App and a Driver App.
+                  <br>
+                  This app was uploaded to the Play Store in 2022 and was actively used in my local town in KZN.
+                  As a cross-platform application, it works seamlessly on both Android and iOS devices. <br>
+                 <strong> Technologies Used:</strong><br>
+                 <strong> Dart & Flutter</strong> – For cross-platform development.<br>
+                 <strong>Firebase</strong> – For authentication and real-time database management.<br>
+                 <strong> Push Notifications</strong> – To send ride requests to drivers.<br>
+                 <strong> Google Maps API</strong> – For location-based services and navigation.<br><br/>
+                 View Project: <a class="" href="https://github.com/mnelic/Uber-Clone_App-150go">Redirect</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item accordion-button-color">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed accordion-button-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  News App
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExampleTwo">
+                <div class="accordion-body">
+                   <strong>Mobile App built using Java and Android Studio IDE: <br> </strong>
+                   The app use APIs to collect international trending news and categories them in different tabs. <br> It has home tab, technology tap, sport tap act.
+                    <br>
+                    <br>
+                    View Project: <a class="" href="https://github.com/mnelic/News-App">Redirect</a>
+                  </div>
+              </div>
+            </div>
+            <div class="accordion-item accordion-button-color">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed accordion-button-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                Covide-19 Statistics Website
+                </button>
+              </h2>
+              <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExampleTwo">
+                <div class="accordion-body">
+                   
+                  The website allows anonymous users as well as authenticated users to be able to view current and historical COVID-19 data, <br> as well as COVID-19 test data and statistics.
+                   <br>The application make provision for three user roles: <strong>Admin</strong>, <strong>Data Capturer</strong> and <strong>Lab Technician</strong>. <br> Each user has different access user role.
+                    <br>
+                    <br>
+                    View Project: <a class="" href="https://github.com/mnelic/Covide-19_Statistics_Project">Redirect</a>
+                
+                  </div>
+              </div>
+            </div>
+          </div>
     </div>
 
     <!-- Contact -->
@@ -232,9 +309,8 @@
             <p> <img src="person-plus.svg" alt=""><strong> Name:</strong>Mnelisi Mbonani</p>
             <p> <img src="envelope-at.svg" alt=""><strong> Email:</strong><a href="mailto:mnelic4@gmail.com">mnelic4@gmail.com</a></p> 
             <p><img src="telephone.svg" alt=""><strong> Phone:</strong> <a href="tel:+1234567890">072 032 1942</a></p>  
-            <p> <img src="geo-alt.svg" alt=""><strong> Address:</strong> 16218 Ajax St, Protea Glen Ext 16-Soweto,Johannesburg</p> 
          </div>
     </div>
-          
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
